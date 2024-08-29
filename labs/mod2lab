@@ -1,0 +1,40 @@
+"""
+Martin Carapia
+mod2lab.py
+This app will accept student names and GPAs and test if the student qualifies for either the Dean's List or the Honor Roll
+
+dean_list is the gpa required to reach the Dean's list
+honor_roll is the gpa required to reach the Honor Roll
+
+student_last_name is the inputted student last name
+student_first_name is the inputted student first name
+student_gpa is the inputted student_gpa
+
+"""
+
+dean_list = 3.5
+honor_roll = 3.25
+while True:
+    student_last_name = input("What's your last name? ")
+    if student_last_name == "ZZZ":
+        break
+    student_first_name = input("What's your first name? ")
+
+    while True:
+        student_gpa = input("What's your gpa? Enter a decimal. ")
+        if student_gpa.replace(".", "").isalpha():
+            print("No letters")
+            continue
+        student_gpa = float(student_gpa)
+        break
+    
+
+
+    
+    if student_gpa >= dean_list:
+        print(f"{student_first_name} {student_last_name} has made the Dean's List")
+    elif student_gpa >= honor_roll:
+        print(f"{student_first_name} {student_last_name} has made the Honor Roll")
+    else:
+        print("You haven't made either honors.")
+
