@@ -1,0 +1,8 @@
+At the end of the notebook, 
+describe the test results in your own words.  
+What do the test results mean?
+
+The test results returned saying "Fraction(9,10) != 1". This is
+true because they are not equal. This result tells me, a developer, that 
+the passed result is not equal to the integer 1. This helps me troubleshoot.
+I also am told that 2 ran but 1 failed meaning that 1 passed. 
